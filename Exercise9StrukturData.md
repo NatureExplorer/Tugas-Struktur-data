@@ -92,6 +92,43 @@ nilai.norm()
 - Euclidian Distance adalah jarak antara 2 vector dan didefinisikan sebagai 
 $$d = \sqrt{ (x_1 - x_2)^2 + (y_1 - y_2)^2 + (x_1 - x_2)^2 } $$
 buatlah program untuk menghitung euclidian distance antara 2 vector berdasarkan class yang telah anda buat!
+```python
+import math
+class Koordinat:
+  def __init__(self,x,y,z):
+    self.z = z
+    self.x = x
+    self.y = y
+
+  def set_x(self):
+    return self.x
+
+  def set_y(self):
+    return self.y 
+
+  def set_z(self):
+    return self.z 
+a = Koordinat(1,2,3)
+b = Koordinat(4,5,6)
+
+x1 = a.set_x()
+y1 = a.set_y()
+z1 = a.set_z()
+
+x2 = b.set_x()
+y2 = b.set_y()
+z2 = b.set_z()
+
+koor1 = (x1,y1,z1)
+koor2 = (x2,y2,z2)
+
+def panjang(x,y):
+  sum = 0
+  for i in range(len(x)):
+    sum = sum +(x[i]-y[i])**2
+    return sum**0.5
+print(int(panjang(koor1,koor2)))
+```
 
 - Perhatikan tabel berikut
 
